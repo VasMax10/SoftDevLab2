@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+
+    <EditText
+        android:id="@+id/etvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:inputType="textShortMessage"
+        android:hint="Name"/>
+
+    <EditText
+        android:id="@+id/etvRank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:inputType="number"
+        android:hint="Rank"/>
+
+    <EditText
+        android:id="@+id/etvCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:inputType="numberDecimal"
+        android:hint="Cost"/>
+
+    <EditText
+        android:id="@+id/etvCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:inputType="textShortMessage"
+        android:hint="City"/>
+
+    <EditText
+        android:id="@+id/etvChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:inputType="numberSigned"
+        android:hint="Change"/>
+
+    <Button
+        android:id="@+id/btn_create_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create"
+        android:textSize="25sp"/>
+
+</LinearLayout>
