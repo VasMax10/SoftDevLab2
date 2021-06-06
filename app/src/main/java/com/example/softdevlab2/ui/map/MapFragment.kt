@@ -115,8 +115,6 @@ class MapFragment : Fragment(), OnMapReadyCallback,
         mMap!!.setOnMyLocationChangeListener { location ->
             myLocation = location
             val ltlng = LatLng(location.latitude, location.longitude)
-
-//            mMap!!.animateCamera(cameraUpdate)
         }
 
         start = myLocation?.let { LatLng(it.latitude, it.longitude) }
@@ -157,10 +155,6 @@ class MapFragment : Fragment(), OnMapReadyCallback,
 
     // function to find Routes.
     fun Findroutes(Start: LatLng?, End: LatLng?) {
-        if (Start == null)
-            Toast.makeText(context, "From is null", Toast.LENGTH_LONG).show()
-        if (End == null)
-            Toast.makeText(context, "End is null", Toast.LENGTH_LONG).show()
         if (Start == null || End == null) {
             Toast.makeText(context, "Unable to get location", Toast.LENGTH_LONG).show()
         } else {

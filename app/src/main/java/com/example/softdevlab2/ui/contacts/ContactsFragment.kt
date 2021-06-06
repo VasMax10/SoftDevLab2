@@ -30,13 +30,6 @@ class ContactsFragment : Fragment() {
         contactsViewModel =
                 ViewModelProvider(this).get(ContactsViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_contacts, container, false)
-//        val textView: TextView = root.findViewById(R.id.text_home)
-
-//        contactsViewModel.text.observe(viewLifecycleOwner, Observer {
-//            textView.text = it
-//        })
-
-//        val res = getContactList()
 
         return root
     }
